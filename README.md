@@ -29,7 +29,7 @@ Example
     Building native extensions.  This could take a while...
     <snip>
     
-    $ irb -rubygems -rsnappy
+    $ irb -rubygems -rsnappy_ext
     >> Snappy.compress "1234567890" * 10
     => "d$1234567890\376\n\000f\n\000"
     

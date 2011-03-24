@@ -39,12 +39,7 @@ Example
 Ruby Gems
 ---------
 
-Wrapping the Google release for consumption in Ruby involves three parts:
-
-- `snappy`
-
-  Relies on `snappy_ext` or `snappy_ffi` for actual compression, but hides that
-  distinction from the user.
+I have made two bindings for Snappy:
 
 - `snappy_ext`
 
@@ -55,10 +50,6 @@ Wrapping the Google release for consumption in Ruby involves three parts:
 
   Uses FFI to communicate with libsnappy, which must be installed separately.
   Works on non-MRI Ruby implementations.
-
-Installing `snappy_ext` or `snappy_ffi` will cause `snappy` to be installed as
-well. Additionally, `snappy` will throw a LoadError if you try to `require` it
-without also installing one of the others.
 
 Put `snappy_ext` or `snappy_ffi` in your Gemfile as appropriate, but use the
 Snappy functions (instead of Snappy::Ext or Snappy::FFI) so you can change

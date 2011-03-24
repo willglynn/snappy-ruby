@@ -5,7 +5,7 @@ require 'ffi'
 module Snappy; end
 
 module Snappy::FFI
-  Version = "0.1.1"
+  Version = "0.1.2"
   
   #:nodoc
   module Snappy::FFI::Lib
@@ -129,5 +129,9 @@ module Snappy::FFI
       end    
     }
   end
-  
+end
+
+module Snappy
+  def self.compress(string); Snappy::FFI.compress(string) end
+  def self.uncompress(string); Snappy::FFI.uncompress(string) end
 end

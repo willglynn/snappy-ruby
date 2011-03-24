@@ -123,7 +123,9 @@ void Init_snappy_ext()
     rb_define_const(snappy_ext, "SnappyVersion", rb_str_new2(version));
   }
   
-  // Add our methods
+  // Add our methods to both Snappy::Ext and Snappy
+  rb_define_module_function(snappy, "compress", RUBY_METHOD_FUNC(snappy_ext_compress), 1);
+  rb_define_module_function(snappy, "uncompress", RUBY_METHOD_FUNC(snappy_ext_uncompress), 1);
   rb_define_module_function(snappy_ext, "compress", RUBY_METHOD_FUNC(snappy_ext_compress), 1);
   rb_define_module_function(snappy_ext, "uncompress", RUBY_METHOD_FUNC(snappy_ext_uncompress), 1);
 }

@@ -54,5 +54,5 @@ Gem::Specification.new do |s|
   s.email = 'will@willglynn.com'
   s.homepage = 'http://github.com/delta407/snappy-ruby'
 
-  s.add_dependency 'snappy', '=0.1.1'
+  # s.add_dependency 'snappy', "=#{MY_GEM_VERSION}"
 end

@@ -24,6 +24,6 @@ Gem::Specification.new do |s|
   s.homepage = 'http://github.com/delta407/snappy-ruby'
 
   s.add_dependency 'ffi'
-  s.add_dependency 'snappy', '=0.1.1'
+  # s.add_dependency 'snappy', "=#{Snappy::FFI::Version}"
   s.requirements << "libsnappy"
 end

@@ -52,7 +52,7 @@ Gem::Specification.new do |s|
 
   s.author = 'Will Glynn'
   s.email = 'will@willglynn.com'
-  s.homepage = 'http://github.com/delta407/snappy-ruby'
+  s.homepage = 'http://github.com/willglynn/snappy-ruby'
 
   # s.add_dependency 'snappy', "=#{MY_GEM_VERSION}"
 end
